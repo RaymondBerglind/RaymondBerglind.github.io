@@ -1,0 +1,182 @@
+#wrapper-main {
+	max-width: 2046px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 23px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 23px;
+}
+
+h3, .menu.primary {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 23px;
+}
+
+p {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 23px;
+}
+
+blockquote {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 17px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 23px;
+}
+
+pre {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 23px;
+}
+
+/* Layout, background */
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+#main, #services {
+	background: no-repeat center center;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 80vh;
+}
+
+#main {
+	/*background-image: -webkit-linear-gradient(top left, rgba(70, 50, 80, 0.45), rgba(100, 0, 50, 0.45)), url(Assets/Oskar_Angle_Clr_Hres.jpg);
+	background-image: -o-linear-gradient(top left, rgba(70, 50, 80, 0.45), rgba(100, 0, 50, 0.45)), url(Assets/Oskar_Angle_Clr_Hres.jpg);
+	background-image: linear-gradient(to bottom right, rgba(70, 50, 80, 0.45), rgba(100, 0, 50, 0.45)), url(Assets/Oskar_Angle_Clr_Hres.jpg);*/
+	background-image: url(Assets/Oskar_Angle_Clr_Hres.jpg);
+	position: relative;
+	text-align: center;
+}
+
+#services {
+	background-color: #74B5EE;
+	height: auto;
+	text-align: center;
+}
+
+#title-card {
+	position: absolute;
+	/*width: auto;*/
+	/*top: 60%;*/
+	top: 0;
+	left: 0;
+	/*transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);*/
+	/*padding: 1em 2em;*/
+	/*background: -webkit-linear-gradient(top left, #FFB5CE, #41FFCC);
+	background: -o-linear-gradient(top left, #FFB5CE, #41FFCC);
+	background: linear-gradient(to bottom right, #FFB5CE, #41FFCC);*/
+	/*background-color: rgba(21, 135, 110, 0.8);*/
+	color: #FFF;
+	height: 0;
+	width: 0;
+	border-bottom: 200px solid transparent;
+	border-right: 60px solid transparent;
+	border-left: 300px solid #FFFFFF;
+}
+
+#title-card p {
+	position: relative;
+	left: -30px;
+	text-align: center;
+}
+/* Menu */
+
+header {
+	background-color: #FFFFFF;
+	background-size: cover;
+	width: 100%;
+}
+
+.nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: #FFFFFF;
+	text-align: center;
+}
+
+
+.nav a {
+	display: block;
+	text-decoration: none;
+	color: #000028;
+	padding: 8px;
+}
+
+.nav li {
+	display: inline;
+}
+
+.nav li a {
+	display: inline-block;
+	margin: 0px 15px;
+}
+
+.liquid-info {
+	color: #FFFFFF;
+	display: inline-block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px 10px;
+	width: 30%;
+}
+
+/*.nav li:hover {
+	background-color: #52D374;
+	border-bottom-style: solid;
+	border-bottom-width: 10px;
+	border-bottom-color: #52D374;
+}
+
+#logo-top {
+	background-color: transparent !important;
+}*/
+
+.logo-top-img {
+	height: 30px;
+	width: 42px;
+	margin: 5px;
+	float: left;
+	/*bottom: 1;
+	left: 3;*/
+}
+
+@media (max-width: 800px) {
+	.liquid-info {
+		display: block;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding: 10px 5px;
+		width: 90%;
+	}
+}

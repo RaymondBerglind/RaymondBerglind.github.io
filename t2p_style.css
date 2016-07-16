@@ -1,0 +1,243 @@
+#wrapper-main {
+	max-width: 2046px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 23px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 23px;
+}
+
+h3, .menu.primary {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 23px;
+}
+
+p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 23px;
+}
+
+blockquote {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 17px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 23px;
+}
+
+pre {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 23px;
+}
+
+/* Layout, background */
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+#main, #services, #about {
+	background: no-repeat center center;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 95vh;
+}
+
+#main {
+	/*background-image: -webkit-linear-gradient(top left, rgba(0, 0, 80, 0.45), rgba(0, 0, 0, 0.45)), url(Assets/Oskar_Angle_Clr_Hres.jpg);
+	background-image: -o-linear-gradient(top left, rgba(0, 0, 80, 0.45), rgba(0, 0, 0, 0.45)), url(Assets/Oskar_Angle_Clr_Hres.jpg);
+	background-image: linear-gradient(to bottom right, rgba(0, 0, 80, 0.45), rgba(0, 0, 0, 0.45)), url(Assets/Oskar_Angle_Clr_Hres.jpg);*/
+	background-image: url(Assets/Oskar_Angle_Clr_Hres.jpg);
+	text-align: center;
+}
+
+#about {
+	position: relative;
+	height: auto;
+	overflow: hidden;
+}
+
+#about p {
+	padding: 1em 2em;
+}
+
+.beside-text-img {
+	float: right;
+	margin: 1em 0em 1em 1em;
+	width: 40%;
+}
+
+#services {
+	background-color: #74B5EE;
+	height: auto;
+	text-align: center;
+}
+
+#title-card {
+	position: relative;
+	/*width: 100%;*/
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	text-align: center;
+	padding: 15px 40px;
+	/*background: -webkit-linear-gradient(top left, #FFB5CE, #41FFCC);
+	background: -o-linear-gradient(top left, #FFB5CE, #41FFCC);
+	background: linear-gradient(to bottom right, #FFB5CE, #41FFCC);*/
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #FFF;
+	display: inline-block;	
+}
+/* Menu */
+
+header {
+	background-color: #FFFFFF;
+	background-size: cover;
+	width: 100%;
+	height: 40px;
+}
+
+.nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: #FFFFFF;
+	text-align: center;
+}
+
+.nav a {
+	display: block;
+	text-decoration: none;
+	color: #000028;
+	padding: 8px;
+}
+
+.nav li {
+	display: inline;
+}
+
+.nav li a {
+	display: inline-block;
+	margin: 0px 15px;
+}
+
+.icon {
+	display: none;
+}
+
+.icon > img {
+	margin: 10px;
+	height: 25px;
+	width: 25px;
+}
+
+.liquid-info {
+	color: #FFFFFF;
+	display: inline-block;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px 10px;
+	width: 30%;
+}
+
+/*.nav li:hover {
+	background-color: #52D374;
+	border-bottom-style: solid;
+	border-bottom-width: 10px;
+	border-bottom-color: #52D374;
+}
+
+#logo-top {
+	background-color: transparent !important;
+}*/
+
+.logo-top-img {
+	height: 30px;
+	width: 42px;
+	margin: 5px;
+	float: left;
+}
+
+/* CSS for smaller screens. */
+@media (max-width: 800px) {
+	.liquid-info {
+		display: block;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding: 10px 5px;
+		width: 90%;
+	}
+	
+	.beside-text-img {
+		display: block;
+		float: none;
+		width: 95%;
+		margin: 1em auto;
+	}
+	
+	header {
+		text-align: center;
+		position: fixed;
+		z-index: 1;
+	}
+	
+	.nav li {
+		display: none;
+	}
+  	
+	.icon {
+    	float: right;
+    	display: inline-block;
+  	}
+	  
+	ul.nav.responsive {
+		position: relative;
+		display: block;
+		background-color: rgba(0, 0, 0, 0.7);
+
+		top:0px;
+		overflow: hidden;
+	}
+	
+	.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	
+	/*ul.nav.responsive li {
+		float: none;
+		display: block;
+	}*/
+	
+	ul.nav.responsive li a {
+		display: block;
+		text-align: left;
+		color: #FFFFFF;
+	}
+}
