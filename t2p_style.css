@@ -64,13 +64,12 @@ html, body {
 	background-size: cover;
 	width: 100%;
 	height: 95vh;
+	padding-top: 40px;
 }
 
 #main {
-	/*background-image: -webkit-linear-gradient(top left, rgba(0, 0, 80, 0.45), rgba(0, 0, 0, 0.45)), url(Assets/Oskar_Angle_Clr_Hres.jpg);
-	background-image: -o-linear-gradient(top left, rgba(0, 0, 80, 0.45), rgba(0, 0, 0, 0.45)), url(Assets/Oskar_Angle_Clr_Hres.jpg);
-	background-image: linear-gradient(to bottom right, rgba(0, 0, 80, 0.45), rgba(0, 0, 0, 0.45)), url(Assets/Oskar_Angle_Clr_Hres.jpg);*/
 	background-image: url(Assets/Oskar_Angle_Clr.jpg);
+	background-attachment: fixed;
 	text-align: center;
 }
 
@@ -98,15 +97,11 @@ html, body {
 
 #title-card {
 	position: relative;
-	/*width: 100%;*/
 	top: 50%;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	text-align: center;
 	padding: 15px 40px;
-	/*background: -webkit-linear-gradient(top left, #FFB5CE, #41FFCC);
-	background: -o-linear-gradient(top left, #FFB5CE, #41FFCC);
-	background: linear-gradient(to bottom right, #FFB5CE, #41FFCC);*/
 	background-color: rgba(0, 0, 0, 0.5);
 	color: #FFF;
 	display: inline-block;	
@@ -165,17 +160,6 @@ header {
 	width: 30%;
 }
 
-/*.nav li:hover {
-	background-color: #52D374;
-	border-bottom-style: solid;
-	border-bottom-width: 10px;
-	border-bottom-color: #52D374;
-}
-
-#logo-top {
-	background-color: transparent !important;
-}*/
-
 .logo-top-img {
 	height: 30px;
 	width: 42px;
@@ -229,12 +213,7 @@ header {
 		right: 0;
 		top: 0;
 	}
-	
-	/*ul.nav.responsive li {
-		float: none;
-		display: block;
-	}*/
-	
+		
 	ul.nav.responsive li a {
 		display: block;
 		text-align: left;
