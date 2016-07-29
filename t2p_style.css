@@ -192,22 +192,17 @@ header {
 	.nav li {
 		display: none;
 	}
-  	
-	.icon {
-    	float: right;
-    	display: inline-block;
-  	}
-	  
+
 	ul.nav.responsive {
 		position: relative;
 		display: block;
 		background-color: rgba(0, 0, 0, 0.7);
-
-		top:0px;
+		top: 0px;
 		overflow: hidden;
 	}
 	
 	.icon {
+    	display: inline-block;
 		position: absolute;
 		right: 0;
 		top: 0;
