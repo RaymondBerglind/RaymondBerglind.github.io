@@ -57,19 +57,22 @@ html, body {
 }
 
 #main, #services, #about {
+	width: 100%;
+}
+
+.headline {
+	text-align: left;
+}
+
+#main {
 	background: no-repeat center center;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
 	background-size: cover;
-	width: 100%;
-	height: 95vh;
-	padding-top: 40px;
-}
-
-#main {
 	background-image: url(Assets/Oskar_Angle_Clr.jpg);
 	text-align: center;
+	height: 95vh;
 }
 
 #about {
@@ -90,8 +93,18 @@ html, body {
 
 #services {
 	background-color: #74B5EE;
+	color: #FFFFFF;
 	height: auto;
 	text-align: center;
+}
+
+.liquid-info {
+	display: inline-block;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px 10px;
+	width: 30%;
 }
 
 #title-card {
@@ -102,41 +115,55 @@ html, body {
 	text-align: center;
 	padding: 15px 40px;
 	background-color: rgba(0, 0, 0, 0.5);
-	color: #FFF;
 	display: inline-block;	
+	color: #FFFFFF;
 }
-/* Menu */
 
 header {
 	background-color: #FFFFFF;
 	background-size: cover;
 	width: 100%;
-	height: 40px;
+	height: 72px;
+	border-bottom-width: 1px;
+	border-bottom-color: rgba(0, 0, 0, 0.3);
+	border-bottom-style: solid;
+	position: fixed;
+	z-index: 1;
 }
 
 .nav {
 	list-style: none;
+	display: inline-block;
 	margin: 0;
 	padding: 0;
-	width: 100%;
 	background: #FFFFFF;
-	text-align: center;
+	/*text-align: center;*/
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
 }
 
-.nav a {
-	display: block;
-	text-decoration: none;
-	color: #000028;
-	padding: 8px;
-}
 
 .nav li {
 	display: inline;
+	margin: 10px 15px;
 }
 
 .nav li a {
-	display: inline-block;
-	margin: 0px 15px;
+	text-decoration: none;
+	color: #000000;
+	display: inline;
+	-webkit-transition: color 200ms ease-out;
+	-moz-transition: color 200ms ease-out;
+	transition: color 200ms ease-out; 
+}
+
+.nav li a:hover {
+	color: rgb(22, 135, 110);
+	border-bottom: solid;
+	border-bottom-width: 4px;
+	border-bottom-color: rgb(22, 135, 110);
 }
 
 .icon {
@@ -149,19 +176,9 @@ header {
 	width: 25px;
 }
 
-.liquid-info {
-	color: #FFFFFF;
-	display: inline-block;
-	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0px 10px;
-	width: 30%;
-}
-
 .logo-top-img {
-	height: 30px;
-	width: 42px;
+	height: 61px;
+	width: 181px;
 	margin: 5px;
 	float: left;
 }
@@ -182,18 +199,29 @@ header {
 		width: 95%;
 		margin: 1em auto;
 	}
-	
+
+	.logo-top-img {
+		float: left;
+		margin: 5px;
+	}
+
 	header {
 		text-align: center;
 		position: fixed;
 		z-index: 1;
 	}
 	
+	.nav {
+		transform: none;
+		width: 100%;
+	}
+
 	.nav li {
 		display: none;
 	}
 
 	ul.nav.responsive {
+		text-align: left;
 		position: relative;
 		display: block;
 		background-color: rgba(0, 0, 0, 0.7);
@@ -209,8 +237,8 @@ header {
 	}
 		
 	ul.nav.responsive li a {
-		display: block;
-		text-align: left;
 		color: #FFFFFF;
+		width: 100%;
+		display: block;
 	}
 }
